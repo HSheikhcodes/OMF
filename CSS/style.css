@@ -12,15 +12,18 @@
     flex-wrap: nowrap;
 }
 
-.address { 
+address { 
     display: flex;
     justify-content: center;
-    font-weight: 500 ;
     padding: 15px;
     background-color: #EAEAEA;
     box-sizing: inherit;
     font-family:'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
+    font-style:normal; 
+    padding: 16px;
 }
+.fa-location-dot:before, .fa-map-marker-alt:before {
+    content: "\f3c5";
+    margin-right: 15px; } 
