@@ -1,5 +1,6 @@
-* 
+* body
 
+/****************************Oh-My-Food Logo****/
 
 .logo-header { 
     display: flex;
@@ -11,6 +12,8 @@
     justify-content: center;
     flex-wrap: nowrap;
 }
+
+/****************************Address-Section****/
 
 address { 
     display: flex;
@@ -26,4 +29,48 @@ address {
 }
 .fa-location-dot:before, .fa-map-marker-alt:before {
     content: "\f3c5";
-    margin-right: 15px; } 
+    margin-right: 15px; 
+} 
+
+.Discover { 
+    display: flex;
+    justify-content: center;
+    background-color: #F6F6F6;
+    text-align: center;
+    padding:29px ;
+}
+.Discover > h1 { 
+    font-size: 700;
+    font-weight: 24px;
+}
+
+.Discover> p { 
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/****************************Button****/
+
+.Button { 
+    display: inline-block;
+    position: relative;
+    padding: 18px 24px;
+    border-radius: 50px;
+    color: #FFF;
+    background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+    text-decoration: none;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+    
+}
+
+.Button:hover {
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.Button:after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(180deg, #ff88de 0%, #a16be0 100%);
+    opacity: 0;
+}
+/****************************Restaurants****/
