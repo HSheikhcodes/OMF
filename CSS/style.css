@@ -73,4 +73,73 @@ address {
     background: linear-gradient(180deg, #ff88de 0%, #a16be0 100%);
     opacity: 0;
 }
-/****************************Restaurants****/
+/****************************Guide section****/
+
+.restaurant-guides {
+    display: flex; 
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    border-radius: 30px;
+    margin-bottom: 18px;
+    margin-left: 12px;
+    padding: 15px;
+ 
+}
+
+.fa-mobile-android-alt:before, .fa-mobile-screen:before {
+    content: "\f3cf";
+    margin: 15px;
+}
+
+.step {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin-left: 15px;
+    margin-right: 10px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 50px;
+  }
+
+  .step__icon {
+    margin: 0 20px 0 26px;
+    font-size: 20px;
+    color: #7E7E7E;
+  }
+  .step__title {
+    font-weight: 900;
+  }
+  .step__number {
+     text-align: center;
+    background: #9356DC;
+    color: #FFF;
+    left: -10px;
+    width: 20px; 
+    border-radius: 50%;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    
+  }
+  .step:hover {
+    background-color: #F5EDFF;
+  }
+  .step:hover i {
+    color: #9356DC;
+  }
+  @media only screen and (min-width: 768px) {
+    .step {
+      flex-basis: 47%;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    .step {
+      flex-basis: 30%;
+    }
+  }
