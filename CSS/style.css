@@ -1,13 +1,10 @@
 /**Media querues & Keyframes**/
 
 /* Mobile First Styles */
-@media only screen and (min-width: 992px) {
   .logo-header  {
     padding: 16px 64px;
   }
-}
 
-  @media only screen and (min-width: 992px) {
   .guide { 
     padding: 16px 64px;
     flex-direction: row;
@@ -23,7 +20,12 @@
     padding: 64px 128px;
     flex-direction: row;
   }
-}
+  .footer, 
+  .footer-link {
+    padding: 64px 128px;
+    flex-direction: row;
+  }
+
 
 @media only screen and (min-width: 992px) {
 .footer, .footer-link { 
@@ -35,7 +37,7 @@
 @media only screen and (min-width: 1200px) {
  .guide,
  .step,
-  .restaurant-guides, 
+ .restaurant-guides, 
  .restaurant-card, 
  .footer, 
  .footer-link
