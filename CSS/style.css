@@ -1,6 +1,6 @@
 /**Media querues & Keyframes**/
 
-
+/* Mobile First Styles */
 @media only screen and (min-width: 992px) {
   .logo-header  {
     padding: 16px 64px;
@@ -30,11 +30,16 @@
   padding: 64px 128px;
   flex-direction: row;
 }
-}* /*************************************1200px**********************************************/
-
-
-@media only screen and (min-width: 1200px;) {
- .guide { 
+}
+* /*************************************1200px**********************************************/
+@media only screen and (min-width: 1200px) {
+ .guide,
+ .step,
+  .restaurant-guides, 
+ .restaurant-card, 
+ .footer, 
+ .footer-link
+  { 
   padding: 64px 128px;
   flex-direction: row;
  }
@@ -58,46 +63,11 @@
     padding: 64px 128px;
     flex-direction: row;
    }
-   .footer-links { 
+   .footer-link { 
     padding: 64px 128px;
     flex-direction: row;
    }
-  
- }
-
-
-
-
-
-}
-
-
-
-
-
-* /*************************************1200px**********************************************/
-
-
-
-* /*************************************Check if neccesaary**********************************************/
-
-
-@media only screen and (min-width: 1200px) {
-  .footer {
-    padding: 64px 128px;
-    display: flex;
-    flex-direction: row;
   }
-}
-}
-
-
-@media only screen and (min-width: 1200px) {
-  .logo-header  {
-    padding: 16px 128px;
-  }
-}
-
 * /*************************************Applied to ALL CLASSES**********************************************/
 body 
 { 
@@ -187,10 +157,7 @@ address {
     background: linear-gradient(180deg, #ff88de 0%, #a16be0 100%);
     opacity: 0;
 }
-@media only screen and (min-width: 768px) {
-.Button 
-    flex-direction:row; 
-  }
+
 /****************************Guide section****/
 
 .restaurant-guides {
@@ -264,7 +231,7 @@ address {
     }
   }
 
-  /****************************restaurant****/
+  /*****************************restaurant****/
   .restaurants-section {
     flex-direction:row-reverse ;
     padding:  5px;
@@ -330,30 +297,29 @@ address {
   h2 {
     font-weight: 700;
     font-size: 18px;
-    margin: 0; /* Remove default margin */
   }
   
   p {
     font-weight: 300;
     font-size: 16px;
-    margin: 0; /* Remove default margin */
   }
   
   .fill-heart {
     position: relative;
     left: 20px;
-    opacity: 0;
     transition: opacity 0.8s ease-in; /* Add transition for a smooth effect */
+    opacity: 0;
   }
   
   .fill-heart:hover {
     cursor: pointer;
+    transition: 0.8s ease-in;
     opacity: 1;
     background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
     color: transparent;
   }
   
-  /* Additional styles for consistency ---- TBC----*/
+  /*Additional styles for consistency ---- TBC----*/
   .restaurant-card:hover .card-img {
     transform: scale(1.05);
     transition: transform 0.5s ease-in-out;
