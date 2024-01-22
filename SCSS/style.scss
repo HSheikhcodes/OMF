@@ -1,16 +1,17 @@
 
   /*Default should be Mobile */
   @import "./variables";
-body {
-    font-family: "Roboto", sans-serif;
-    text-decoration: none;
-  }
-  
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  
+
+    /* Colours for each section */
+
+    .Button { 
+      background-color: linear-gradient(180deg, #ff88de 0%, #a16be0 100%);
+      color: #FFF;
+    }
+    .Discover { 
+      background-color:#F6F6F6;
+    }
+
   .logo-header {
     display: flex;
     position: relative;
