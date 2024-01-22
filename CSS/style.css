@@ -5,7 +5,7 @@
 }
 @media only screen and (min-width: 992px) {
   .logo-header  {
-    padding: 16px 64px;
+    padding: 64px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -14,33 +14,48 @@
   }
 }
 
-
-.guide, .restaurant-guides  {
-  padding: 50px 18px;
-}
-@media only screen and (min-width: 992px) {
-  .guide, .restaurant-guides {
-    padding: 64px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .guide, .restaurant-guides {
+@media only screen and (min-width: 992px;){
+  .guide { 
     padding: 64px 128px;
+    display: flex;
+    flex-direction: row;
   }
 }
+
+
+
+@media only screen and (min-width: 992px) {
+  .restaurant-guides {
+    padding: 64px;
+    display: flex;
+    flex-direction: row;
+  }
+
+
 
 
 .restaurant-section  {
   padding: 50px 18px;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) 
   .restaurant-section {
     padding: 64px;
+    display: flex;
+    flex-direction: row;
   }
-}
-@media only screen and (min-width: 1200px) {
+
+@media only screen and (min-width: 1200px) 
   .restaurant-section {
     padding: 64px 128px;
+    display: flex;
+    flex-direction: row;
+  }
+
+@media only screen and (min-width: 1200px) 
+  ..footer {
+    padding: 64px 128px;
+    display: flex;
+    flex-direction: row;
   }
 }
 * /*************************************Applied to ALL CLASSES**********************************************/
@@ -132,9 +147,9 @@ address {
     background: linear-gradient(180deg, #ff88de 0%, #a16be0 100%);
     opacity: 0;
 }
-@media only screen and (min-width: 768px) 
-  .{
-    flex-direction: row; 
+@media only screen and (min-width: 768px) {
+.Button 
+    flex-direction:row; 
   }
 /****************************Guide section****/
 
