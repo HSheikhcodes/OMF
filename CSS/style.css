@@ -3,15 +3,21 @@
 
 @media only screen and (min-width: 992px) {
   .logo-header  {
-    padding: 64px;
+    padding: 16px 64px;
   }
+}
 
+  @media only screen and (min-width: 992px) {
   .guide { 
-    padding: 64px 128px;
+    padding: 16px 64px;
     flex-direction: row;
+
+   
   }
+}
   
-  .restaurant-guides {
+@media only screen and (min-width: 992px){
+.restaurant-guides, .restaurant-card, .step {
     padding: 64px 128px;
     flex-direction: row;
   }
@@ -19,13 +25,52 @@
     padding: 64px 128px;
     flex-direction: row;
   }
+}
+
+@media only screen and (min-width: 992px) {
 .footer, .footer-link { 
   padding: 64px 128px;
   flex-direction: row;
 }
+}
+
+@media only screen and (min-width: 1200px;) {
+ .guide { 
+  padding: 64px 128px;
+  flex-direction: row;
+ }
+
+ .restaurant-guides { 
+  padding: 64px 128px;
+  flex-direction: row;
+
+  
+ }
+
+
+
+
 
 }
 
+
+
+
+
+* /*************************************1200px**********************************************/
+
+@media only screen and (min-width: 992px){
+  .restaurant-guides, .restaurant-card, .step {
+      padding: 64px 128px;
+      flex-direction: row;
+    }
+    .restaurant-section {
+      padding: 64px 128px;
+      flex-direction: row;
+    }
+
+
+* /*************************************Check if neccesaary**********************************************/
 
 
 @media only screen and (min-width: 1200px) {
