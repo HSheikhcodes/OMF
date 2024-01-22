@@ -1,3 +1,48 @@
+/**Media querues & Keyframes**/
+
+.logo-header {
+  padding: 16px;
+}
+@media only screen and (min-width: 992px) {
+  .logo-header  {
+    padding: 16px 64px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .logo-header  {
+    padding: 16px 128px;
+  }
+}
+
+
+.guide, .restaurant-guides  {
+  padding: 50px 18px;
+}
+@media only screen and (min-width: 992px) {
+  .guide, .restaurant-guides {
+    padding: 64px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .guide, .restaurant-guides {
+    padding: 64px 128px;
+  }
+}
+
+
+.restaurant-section  {
+  padding: 50px 18px;
+}
+@media only screen and (min-width: 992px) {
+  .restaurant-section {
+    padding: 64px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .restaurant-section {
+    padding: 64px 128px;
+  }
+}
 * /*************************************Applied to ALL CLASSES**********************************************/
 body 
 { 
@@ -11,21 +56,6 @@ body
     color: black;
   }
   
-/**Media querues & Keyframes**/
-
-.logo-header { 
-  padding: 1rem;} 
-
-  @media only screen and  (min-width: 992px);{ 
-    .logo-header { 
-      padding: 16px 128px ;
-    }
-  }
-  @media only screen and (min-width: 1200px) {
-    .logo-header { 
-      padding: 16px 128px ;
-  }
-
 
 /****************************Oh-My-Food Logo****/
 
@@ -110,7 +140,7 @@ address {
 
 .restaurant-guides {
     display: flex; 
-    flex-direction: row;
+    flex-direction: column;
     position: relative;
     align-items: center;
     justify-content: flex-start;
@@ -119,6 +149,7 @@ address {
     margin-bottom: 18px;
     margin-left: 12px;
     padding: 15px;
+    
  
 }
 
@@ -129,7 +160,6 @@ address {
 
 .step {
     display: flex; 
-    flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     flex-wrap: nowrap;
@@ -138,6 +168,8 @@ address {
     position: relative;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     border-radius: 50px;
+    height: 72.38px;
+    width: 322.49px;
   }
 
   .step__icon {
@@ -180,17 +212,19 @@ address {
   /****************************restaurant****/
   .restaurants-section {
     flex-direction:row-reverse ;
-    padding: 25px 5px;
+    padding:  5px;
     background: #f6f6f6;
     flex-wrap: wrap;
   }
   
   .restaurant-card {
-       display: flex;
-       flex-direction: row;
-       flex-wrap: wrap;
-       padding: 15px;
-       width: calc(33% - 20px);  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 8px;
+    width: 100%;  
+    margin-left: -8px;
+    color: black;
     
     align-items: center;
     justify-content: center;
@@ -235,7 +269,7 @@ address {
   .card-title {
     display: flex;
     justify-content: space-between;
-    padding: 10px 15px;
+    padding: 11px 12px;
   }
   
   h2 {
@@ -272,27 +306,40 @@ address {
 
     /* ----Footer  ----*/
 .footer { 
-   background-color: rgb(53, 53, 53);
-   color: white;
-   font-weight: 500;
-   font-size: 16px;
-   flex-direction: flex-end;
-}
-
-.footer-title  { 
-  flex-direction: flex-end;
   display: flex;
-  transform: skew(10deg); 
-  font-weight: 400;
-  font-style: italic;
+  flex-direction: column;
+  background-color: #353535;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18.75px;
+  width: 319px;
+  height: auto;
+  padding-left: 22px;
+  color: white;   /* Additional scss variables for colour - ASAP! ----*/
+
+}
+footer > h3 { 
   font-family: "Shrikhand", serif;
-  color: white;
-  font-size: 25px;
-  padding-top: 12px ;
-  padding-left: 20px;
+  font-weight: 700;
+  font-style: italic;
 
 }
-.footer-links { 
+.footer-title  { 
+  flex-direction:column;
   display: flex;
-  gap: 50px;
+  transform: skew(-1deg); 
+  font-weight: 500;
+  color: white; /* Additional scss variables for colour - ASAP! ----*/
+  font-size: 16px;
+  padding-top: 12px ;
+  padding-left: 3px;
+  line-height: 18.75px;
+
+}
+.footer-link a { 
+  display: flex;
+  gap: 9px;
+  color: white; /* Additional scss variables for colour - ASAP! ----*/
+  gap: 16px;
+  margin-bottom: 10px;
 }
