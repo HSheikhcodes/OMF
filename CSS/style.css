@@ -42,30 +42,6 @@
   { 
   padding: 64px 128px;
   flex-direction: row;
- }
-
- .restaurant-guides { 
-  padding: 64px 128px;
-  flex-direction: row;
- }
-
-  .restaurant-card { 
-    padding: 64px 128px;
-    flex-direction: row;
-   }
-
-   .step { 
-    padding: 64px 128px;
-    flex-direction: row;
-   }
-
-   .footer { 
-    padding: 64px 128px;
-    flex-direction: row;
-   }
-   .footer-link { 
-    padding: 64px 128px;
-    flex-direction: row;
    }
   }
 * /*************************************Applied to ALL CLASSES**********************************************/
