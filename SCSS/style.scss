@@ -1,8 +1,12 @@
 
   /*Default should be Mobile */
-  @import "./variables";
+  @import "variables";
 
     /* Colours for each section */
+
+    $primary-background-color:#FFF;
+    $secondary-background-color: #F6F6F6;
+
 
     .Button { 
       background-color: linear-gradient(180deg, #ff88de 0%, #a16be0 100%);

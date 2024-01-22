@@ -253,14 +253,14 @@ address {
   .step:hover i {
     color: #9356DC;
   }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 992px) {
     .step {
-      flex-basis: 47%;
+     flex-direction: row;
     }
   }
   @media only screen and (min-width: 992px) {
     .step {
-      flex-basis: 30%;
+      flex-direction: row;
     }
   }
 
