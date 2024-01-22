@@ -1,52 +1,32 @@
 /**Media querues & Keyframes**/
 
-.logo-header {
-  padding: 16px;
-}
+
 @media only screen and (min-width: 992px) {
   .logo-header  {
     padding: 64px;
   }
-}
-@media only screen and (min-width: 1200px) {
-  .logo-header  {
-    padding: 16px 128px;
-  }
-}
 
-@media only screen and (min-width: 992px;) {
   .guide { 
     padding: 64px 128px;
-    display: flex;
     flex-direction: row;
   }
-}
-
-@media only screen and (min-width: 992px) {
+  
   .restaurant-guides {
-    padding: 64px;
-    display: flex;
+    padding: 64px 128px;
     flex-direction: row;
   }
-}
-
-.restaurant-section  {
-  padding: 50px 18px;
-}
-@media only screen and (min-width: 992px) {
-  .restaurant-section {
-    padding: 64px;
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
   .restaurant-section {
     padding: 64px 128px;
-    display: flex;
     flex-direction: row;
   }
+.footer, .footer-link { 
+  padding: 64px 128px;
+  flex-direction: row;
+}
+
+}
+
+
 
 @media only screen and (min-width: 1200px) {
   .footer {
@@ -56,6 +36,14 @@
   }
 }
 }
+
+
+@media only screen and (min-width: 1200px) {
+  .logo-header  {
+    padding: 16px 128px;
+  }
+}
+
 * /*************************************Applied to ALL CLASSES**********************************************/
 body 
 { 

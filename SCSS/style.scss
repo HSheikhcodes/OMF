@@ -9,8 +9,17 @@
       color: #FFF;
     }
     .Discover { 
-      background-color:#F6F6F6;
+      $background-color:#F6F6F6;
     }
+
+    .restaurant-card { 
+      $background-color: white;
+    }
+
+  
+  
+    /* specifcs for each section*/
+ 
 
   .logo-header {
     display: flex;
