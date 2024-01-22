@@ -14,9 +14,7 @@
 
    
   }
-}
-  
-@media only screen and (min-width: 992px){
+
 .restaurant-guides, .restaurant-card, .step {
     padding: 64px 128px;
     flex-direction: row;
@@ -32,7 +30,8 @@
   padding: 64px 128px;
   flex-direction: row;
 }
-}
+}* /*************************************1200px**********************************************/
+
 
 @media only screen and (min-width: 1200px;) {
  .guide { 
@@ -43,7 +42,26 @@
  .restaurant-guides { 
   padding: 64px 128px;
   flex-direction: row;
+ }
 
+  .restaurant-card { 
+    padding: 64px 128px;
+    flex-direction: row;
+   }
+
+   .step { 
+    padding: 64px 128px;
+    flex-direction: row;
+   }
+
+   .footer { 
+    padding: 64px 128px;
+    flex-direction: row;
+   }
+   .footer-links { 
+    padding: 64px 128px;
+    flex-direction: row;
+   }
   
  }
 
@@ -59,15 +77,6 @@
 
 * /*************************************1200px**********************************************/
 
-@media only screen and (min-width: 992px){
-  .restaurant-guides, .restaurant-card, .step {
-      padding: 64px 128px;
-      flex-direction: row;
-    }
-    .restaurant-section {
-      padding: 64px 128px;
-      flex-direction: row;
-    }
 
 
 * /*************************************Check if neccesaary**********************************************/
