@@ -16,13 +16,21 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
 
+
+    <link rel="scss" href="./SCSS/style.scss">
+    <link rel="scss" href="./SCSS/_variables.scss">
+    <link rel="scss" href="./SCSS/All.scss">
+
+
+
+
     
     <!----------Fonts----------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e9ad2cc302.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css" integrity="...">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css">
 
 
 </head>
@@ -66,21 +74,21 @@
  </section>
 
          <!-------------------------- restaurant cards ------------------->
-
- 
-
- <section id="cards" class="restaurants-section">
+ <section class="restaurants-section">
     <h1>Restaurants</h1>
 
     <article>
+        <div> 
+
+        </div>
     <div class="restaurant-card">
-        <a href="./kitchen-west/index.html" class="restaurants-cards">
+        <a href="./Restaurants/kitchen-west/index.html" class="restaurants-cards">
             <img
                 class="card-img"
                 src="./images/restaurants/Kitchenwest.jpg"
                 alt="Kitchen-west image">
             <span class="new-card">New</span>
-            <div class="card-name">
+            <div class="card-title">
                 <div>
                     <h2>Kitchen West</h2>
                     <p>Angel</p>
@@ -92,19 +100,17 @@
             </div>
         </a>
     </div>
-
-   
     </article>
 
     <article>
     <div class="restaurant-card">
-        <a href="./Elderflower/index.html" class="restaurants-cards">
+        <a href="./Restaurants/Elderflower/index.html" class="restaurants-cards">
             <img
                 class="card-img"
                 src="./images/restaurants/Elderflower.jpg"
                 alt="Elderflower image">
             <span class="new-card">New</span>
-            <div class="card-name">
+            <div class="card-title">
                 <div>
                     <h2>Elderflower</h2>
                     <p>Old Street</p>
@@ -120,12 +126,12 @@
 
 <article> 
     <div class="restaurant-card">
-        <a href="./Shoreditch Canteen/index.html" class="restaurants-cards">
+        <a href="./Restaurants/Shoreditch Canteen/index.html" class="restaurants-cards">
             <img
                 class="card-img"
                 src="./images/restaurants/ShoreditchCanteen.jpg"
                 alt="Shoreditch-Canteen image">
-            <div class="card-name">
+            <div class="card-title">
                 <div>
                     <h2>Shoreditch Canteen</h2>
                     <p>Shoreditch</p>
@@ -141,12 +147,12 @@
 
     <article>
     <div class="restaurant-card">
-        <a href="./The Bay Leaf/index.html" class="restaurants-cards">
+        <a href="./Restaurants/The Bay Leaf/index.html" class="restaurants-cards">
             <img
                 class="card-img"
                 src="./images/restaurants/TheBayLeaf.jpg"
                 alt="The-Bay-Leaf image">
-            <div class="card-name">
+            <div class="card-title">
                 <div>
                     <h2>The Bay Leaf</h2>
                     <p>Hoxton</p>
@@ -161,6 +167,16 @@
     </article>
 </section> 
 
+ <!-- Footer -->
+ <footer class="footer">
+    <h3 class="footer-title">ohmyfood</h3>
+    <div class="footer-link">
+        <a href="#"><i class="fa-solid fa-utensils"></i> Suggest a restaurant </a>
+        <a href="#"><i class="fa-solid fa-handshake-angle"></i> Become a partner</a>
+        <a href="#">Legal notice</a>
+        <a href="mailto:contact@ohmyfood.com">Contact</a>
+    </div>
+</footer>
 
 </body>
 </html>

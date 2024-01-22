@@ -20,7 +20,7 @@ body
     position: relative;
     z-index: 1;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
@@ -67,6 +67,7 @@ address {
 .Button { 
     display: inline-block;
     position: relative;
+    flex-direction: row;
     padding: 18px 24px;
     margin-top: 30px;
     border-radius: 50px;
@@ -87,6 +88,10 @@ address {
     background: linear-gradient(180deg, #ff88de 0%, #a16be0 100%);
     opacity: 0;
 }
+@media only screen and (min-width: 768px) {
+  . {
+    flex-direction: row; 
+  }
 /****************************Guide section****/
 
 .restaurant-guides {
@@ -160,19 +165,19 @@ address {
 
   /****************************restaurant****/
   .restaurants-section {
-    flex-direction: row;
+    flex-direction:row-reverse ;
     padding: 25px 5px;
     background: #f6f6f6;
+    flex-wrap: wrap;
   }
   
   .restaurant-card {
        display: flex;
-       flex-direction: column;
+       flex-direction: row;
        flex-wrap: wrap;
-    padding: 15px;
- 
+       padding: 15px;
+       width: calc(33% - 20px);  
     
-    gap: 20px;
     align-items: center;
     justify-content: center;
   }
@@ -180,12 +185,13 @@ address {
   .restaurants-cards {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    flex-wrap: wrap;
+
     border-radius: 20px;
-    background-color: white;
+    background-color: white; /* Adjust later */
     width: 90%;
     position: relative;
-    text-decoration: none; /* Add this to remove the default underline */
+    text-decoration: none;
   }
   
   .card-img {
@@ -196,7 +202,7 @@ address {
     border-top-right-radius: 20px;
   }
   
-  .new-card {
+  .new-card { /* Remove from Shoreditch Canteen & Bay Leaf */
     height: 25px;
     width: 70px;
     position: absolute;
@@ -212,7 +218,7 @@ address {
     border: none;
   }
   
-  .card-name {
+  .card-title {
     display: flex;
     justify-content: space-between;
     padding: 10px 15px;
@@ -241,13 +247,38 @@ address {
     cursor: pointer;
     opacity: 1;
     background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-    -webkit-background-clip: text;
     color: transparent;
   }
   
-  /* Additional styles for consistency */
+  /* Additional styles for consistency ---- TBC----*/
   .restaurant-card:hover .card-img {
     transform: scale(1.05);
     transition: transform 0.5s ease-in-out;
   }
-  
+
+    /* ----Footer  ----*/
+.footer { 
+   background-color: rgb(53, 53, 53);
+   color: white;
+   font-weight: 500;
+   font-size: 16px;
+   flex-direction: flex-end;
+}
+
+.footer-title  { 
+  flex-direction: flex-end;
+  display: flex;
+  transform: skew(10deg); 
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Shrikhand", serif;
+  color: white;
+  font-size: 25px;
+  padding-top: 12px ;
+  padding-left: 20px;
+
+}
+.footer-links { 
+  display: flex;
+  gap: 50px;
+}
