@@ -8,21 +8,32 @@
   .guide { 
     padding: 16px 64px;
     flex-direction: row;
-
-   
   }
 
-.restaurant-guides, .restaurant-card, .step {
-    padding: 64px 128px;
+  .guide > h1 { 
+    margin-inline-start: -60px;
+  }
+.restaurant-guides, 
+.step {
+    padding: 16px 64px;
     flex-direction: row;
+
   }
+
+  .restaurant-card {
+    padding: 16px 64px;
+    flex-direction: row;
+    width: 400;
+
+  }
+  
   .restaurant-section {
-    padding: 64px 128px;
+    padding: 16px 64px;
     flex-direction: row;
   }
   .footer, 
   .footer-link {
-    padding: 64px 128px;
+    padding: 16px 12px;
     flex-direction: row;
   }
 
@@ -34,6 +45,7 @@
 }
 }
 * /*************************************1200px**********************************************/
+
 @media only screen and (min-width: 1200px) {
  .guide,
  .step,
@@ -122,6 +134,7 @@ address {
     background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
     text-decoration: none;
     box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+    width: 180px;
     
 }
 
@@ -163,19 +176,23 @@ address {
     align-items: center;
     justify-content: flex-start;
     flex-wrap: nowrap;
-    margin-left: 15px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 2px;
     position: relative;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    border-radius: 50px;
+    border-radius: 20px;
     height: 72.38px;
+    background-color: rgb(246, 246, 246);
     width: 322.49px;
+    margin-bottom: 20px;
+    margin-top: 6px;
   }
 
   .step__icon {
     margin: 0 20px 0 26px;
     font-size: 20px;
     color: #7E7E7E;
+    margin-inline-start: -36px;
   }
   .step__title {
     font-weight: 900;
@@ -185,7 +202,7 @@ address {
     background: #9356DC;
     color: #FFF;
     left: -10px;
-    width: 20px; 
+    width: 25px; 
     border-radius: 50%;
     height: 20px;
     line-height: 20px;
@@ -269,17 +286,19 @@ address {
   .card-title {
     display: flex;
     justify-content: space-between;
-    padding: 11px 12px;
+    padding: 10px 11px;
   }
   
   h2 {
     font-weight: 700;
     font-size: 18px;
+    margin: 0%;
   }
   
   p {
     font-weight: 300;
     font-size: 16px;
+    margin: 0%;
   }
   
   .fill-heart {
@@ -311,10 +330,10 @@ address {
   font-weight: 300;
   font-size: 16px;
   line-height: 18.75px;
-  width: 319px;
-  height: auto;
-  padding-left: 22px;
+  /* Add  width: 319px; - ASAP!----*/ 
+  height: 186px;
   color: white;   /* Additional scss variables for colour - ASAP! ----*/
+
 
 }
 footer > h3 { 
@@ -331,7 +350,7 @@ footer > h3 {
   color: white; /* Additional scss variables for colour - ASAP! ----*/
   font-size: 16px;
   padding-top: 12px ;
-  padding-left: 3px;
+  padding-left: 13px;
   line-height: 18.75px;
 
 }
