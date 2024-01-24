@@ -186,11 +186,11 @@ address {
     position: relative;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     border-radius: 40px;
-    height: 72.38px;
+    height: auto;
     background-color: rgb(246, 246, 246);
     width: 322.49px;
-    margin-bottom: 20px;
-    margin-top: 6px;
+    padding-bottom: 20px;
+    padding-top: 6px;
   }
 
   .step__icon {
