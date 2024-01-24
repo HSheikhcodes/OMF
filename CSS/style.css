@@ -162,6 +162,7 @@ address {
     margin-bottom: 18px;
     margin-left: 12px;
     padding: 15px;
+    margin-inline-start: 107px;
     
  
 }
@@ -175,15 +176,14 @@ address {
     display: flex; 
     align-items: center;
     justify-content: flex-start;
-    flex-wrap: nowrap;
     margin-left: 5px;
     margin-right: 2px;
     position: relative;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    border-radius: 20px;
+    border-radius: 40px;
     height: 72.38px;
     background-color: rgb(246, 246, 246);
-    width: 322.49px;
+    width: 50%;
     margin-bottom: 20px;
     margin-top: 6px;
   }
@@ -195,13 +195,14 @@ address {
     margin-inline-start: -36px;
   }
   .step__title {
-    font-weight: 900;
+    font-weight: 500;
+    margin-inline-start: 20px;
   }
   .step__number {
      text-align: center;
     background: #9356DC;
     color: #FFF;
-    left: -10px;
+    left: 0px;
     width: 25px; 
     border-radius: 50%;
     height: 20px;
@@ -297,7 +298,7 @@ address {
   
   p {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 18px;
     margin: 0%;
   }
   
