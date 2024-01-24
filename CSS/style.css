@@ -1,14 +1,16 @@
 /**Media querues & Keyframes**/
 
 /* Mobile First Styles */
+
 * body { 
   margin: 0%;
   height: 0;
 }
-
+@media only screen and (min-width: 992px) { 
   .logo-header  {
     padding: 16px 64px;
   }
+}
 
   .guide { 
     padding: 16px 64px;
@@ -161,14 +163,10 @@ address {
     flex-direction: column;
     position: relative;
     align-items: center;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    border-radius: 30px;
-    margin-bottom: 18px;
-    margin-left: 12px;
-    padding: 15px;
-    margin-inline-start: 107px;
-    
+    border-radius: 20px;
+    padding-bottom: 30px;
+    margin-inline-start: 0px;   
+    gap: 10px; 
  
 }
 
@@ -178,19 +176,17 @@ address {
 }
 
 .step {
-    display: flex; 
+  display: flex;
     align-items: center;
-    justify-content: flex-start;
-    margin-left: 5px;
-    margin-right: 2px;
     position: relative;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     border-radius: 40px;
-    height: auto;
+    height: 62px;
     background-color: rgb(246, 246, 246);
-    width: 322.49px;
-    padding-bottom: 20px;
-    padding-top: 6px;
+    width: 260px;
+    margin-bottom: 20px;
+    padding-left: 63px;
+    padding-right: 0;
   }
 
   .step__icon {
