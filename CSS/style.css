@@ -1,6 +1,11 @@
 /**Media querues & Keyframes**/
 
 /* Mobile First Styles */
+* body { 
+  margin: 0%;
+  height: 0;
+}
+
   .logo-header  {
     padding: 16px 64px;
   }
@@ -183,7 +188,7 @@ address {
     border-radius: 40px;
     height: 72.38px;
     background-color: rgb(246, 246, 246);
-    width: 50%;
+    width: 322.49px;
     margin-bottom: 20px;
     margin-top: 6px;
   }
