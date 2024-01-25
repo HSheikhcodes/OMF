@@ -65,6 +65,15 @@
   flex-direction: row;
    }
   }
+
+  * /*************************************Keyframes**********************************************/
+
+@keyframes content-appear {
+  
+}
+
+
+  
 * /*************************************Applied to ALL CLASSES**********************************************/
 body 
 { 
@@ -230,18 +239,17 @@ address {
 
   /*****************************restaurant****/
   .restaurants-section {
-    flex-direction:row-reverse ;
+    display: flex;
+    flex-direction: column;
     padding:  5px;
     background: #f6f6f6;
-    flex-wrap: wrap;
   }
   
   .restaurant-card {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     padding: 8px;
-    width: 100%;  
+    width: 90%;  
     margin-left: -8px;
     color: black;
     
