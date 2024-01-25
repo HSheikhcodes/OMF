@@ -48,10 +48,10 @@
 @media only screen and (min-width: 992px) {
 .footer, .footer-link { 
   padding: 64px 128px;
-  flex-direction: row;
+  flex-direction:row;
 }
 }
-* /*************************************1200px**********************************************/
+/*************************************1200px**********************************************/
 
 @media only screen and (min-width: 1200px) {
  .guide,
@@ -62,13 +62,33 @@
  .footer-link
   { 
   padding: 64px 128px;
-  flex-direction: row;
+  flex-direction:row;
    }
   }
 
-  * /*************************************Keyframes**********************************************/
+   /*************************************Keyframes**********************************************/
 
-@keyframes content-appear {
+  @keyframes full-heart { 
+    0% { 
+      opacity:0.5;
+    }
+    20% { 
+      opacity:0.6;
+    }
+    40% { 
+      opacity:0.7;
+    }
+    60% { 
+      opacity:0.8;
+    }
+    80% { 
+      opacity:0.9;
+    }
+    100% { 
+      opacity:1;
+    }
+  }
+  @keyframes content-appear {
   0% { 
     z-index: 0;
   }
@@ -86,35 +106,43 @@
   }
 }
 
-@keyframes full heart { 
+@keyframes spin { 
   0% { 
-    opacity: 0.5;
+    transform:rotate(0deg); 
+    opacity: 1; 
   }
-  20% { 
-    opacity: 0.6;
-  }
-  40% { 
-    opacity: 0.7;
-  }
-  60% { 
-    opacity: 0.8;
-  }
-  80% { 
-    opacity: 0.9;
+  75% { 
+    transform:rotate(360deg); 
+    opacity: 0; 
   }
   100% { 
-    opacity: 1;
+    transform:rotate(36deg); 
+    opacity: 0; 
   }
 
+}
+
+@keyframes confirmation-rotate { 
+  0% { 
+    transform: rotate(180deg);
+  }
+  100% { 
+  transform: rotate(0deg);
+}
 }
 
 
   
 * /*************************************Applied to ALL CLASSES**********************************************/
-body 
+
+/* Mobile First Styles */
+
+* body 
 { 
     font-family: "Roboto", sans-serif;
     text-decoration: none;
+    margin: 0%;
+    padding: 0;
 }
 
   
