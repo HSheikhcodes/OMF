@@ -45,7 +45,35 @@
   }
 
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) { 
+.logo-header  {
+  padding: 64px 128px;
+}
+
+.guide { 
+  padding: 64px 128px;
+  flex-direction: row;
+}
+
+.restaurant-guides, 
+.step {
+  padding: 64px 128px;
+  flex-direction: row;
+
+}
+
+.restaurant-card {
+  padding: 64px 128px;
+  flex-direction: row;
+  width: 400;
+
+}
+
+.restaurant-section {
+  padding: 64px 128px;
+  flex-direction: row;
+} 
+
 .footer, .footer-link { 
   padding: 64px 128px;
   flex-direction:row;
@@ -163,6 +191,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
+    padding: 0 30px;
 }
 
 /****************************Address-Section****/
