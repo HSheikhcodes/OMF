@@ -1,3 +1,4 @@
+
 .logo { 
   display: flex;
   align-items: center;
@@ -47,8 +48,16 @@
 }
 
 .header > h1 { 
-  padding-top: 45px;
+  padding-top: 22px;
 
+}
+
+p { 
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; 
+  font-size: 16px; 
+  line-height: 18.75px;
+  margin-top: -12px;
 }
 
 .heart-icon { 
@@ -61,7 +70,7 @@
 }
 .under-line {
 border-bottom: 4px solid #99e2d0;
-Width: 40px;
+Width: 14%;
 Top: 27px;
 Border-radius:3px;
 }
