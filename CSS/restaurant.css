@@ -100,9 +100,23 @@ margin-bottom: 17px;
 }
 
 .tick { 
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   background-color: #99E2D0;
-  Width: 59px;
   Height:69px;
   padding-left:290px;
-  border-radius: 0px, 15px, 15px, 0px; 
+  border-radius: 15px, 15px, 0px;
+
+}
+.icon { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  width: 20px;
+  height: 20px;
+  top: 24.97px;
+  border-radius: 50%;
+
 }

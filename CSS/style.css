@@ -1,164 +1,8 @@
-/**Media querues & Keyframes**/
-
 /* Mobile First Styles */
-
 * body { 
   margin: 0%;
   height: 0;
 }
-@media only screen and (min-width: 992px) { 
-  .logo-header  {
-    padding: 16px 64px;
-  }
-}
-
-  .guide { 
-    padding: 16px 64px;
-    flex-direction: row;
-  }
-
-  .guide > h1 { 
-    margin-inline-start: -60px;
-  }
-.restaurant-guides, 
-.step {
-    padding: 16px 64px;
-    flex-direction: row;
-
-  }
-
-  .restaurant-card {
-    padding: 16px 64px;
-    flex-direction: row;
-    width: 400;
-
-  }
-  
-  .restaurant-section {
-    padding: 16px 64px;
-    flex-direction: row;
-  }
-  .footer, 
-  .footer-link {
-    padding: 16px 12px;
-    flex-direction: row;
-  }
-
-
-@media only screen and (min-width: 992px) { 
-.logo-header  {
-  padding: 64px 128px;
-}
-
-.guide { 
-  padding: 64px 128px;
-  flex-direction: row;
-}
-
-.restaurant-guides, 
-.step {
-  padding: 64px 128px;
-  flex-direction: row;
-
-}
-
-.restaurant-card {
-  padding: 64px 128px;
-  flex-direction: row;
-  width: 400;
-
-}
-
-.restaurant-section {
-  padding: 64px 128px;
-  flex-direction: row;
-} 
-
-.footer, .footer-link { 
-  padding: 64px 128px;
-  flex-direction:row;
-}
-}
-/*************************************1200px**********************************************/
-
-@media only screen and (min-width: 1200px) {
- .guide,
- .step,
- .restaurant-guides, 
- .restaurant-card, 
- .footer, 
- .footer-link
-  { 
-  padding: 64px 128px;
-  flex-direction:row;
-   }
-  }
-
-   /*************************************Keyframes**********************************************/
-
-  @keyframes full-heart { 
-    0% { 
-      opacity:0.5;
-    }
-    20% { 
-      opacity:0.6;
-    }
-    40% { 
-      opacity:0.7;
-    }
-    60% { 
-      opacity:0.8;
-    }
-    80% { 
-      opacity:0.9;
-    }
-    100% { 
-      opacity:1;
-    }
-  }
-  @keyframes content-appear {
-  0% { 
-    z-index: 0;
-  }
-  100% { 
-    z-index:10000 ;
-  }
-}
-
-@keyframes plate-appear { 
-  0% { 
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes spin { 
-  0% { 
-    transform:rotate(0deg); 
-    opacity: 1; 
-  }
-  75% { 
-    transform:rotate(360deg); 
-    opacity: 0; 
-  }
-  100% { 
-    transform:rotate(36deg); 
-    opacity: 0; 
-  }
-
-}
-
-@keyframes confirmation-rotate { 
-  0% { 
-    transform: rotate(180deg);
-  }
-  100% { 
-  transform: rotate(0deg);
-}
-}
-
 
   
 * /*************************************Applied to ALL CLASSES**********************************************/
@@ -281,7 +125,7 @@ address {
     align-items: center;
     position: relative;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    border-radius: 40px;
+    border-radius: 20px;
     height: 62px;
     background-color: rgb(246, 246, 246);
     width: 260px;
@@ -298,7 +142,7 @@ address {
   }
   .step__title {
     font-weight: 500;
-    margin-inline-start: 20px;
+  
   }
   .step__number {
      text-align: center;
@@ -341,7 +185,6 @@ address {
     display: flex;
     flex-direction: column;
     padding: 8px;
-    width: 90%;  
     margin-left: -8px;
     color: black;
     
@@ -463,3 +306,166 @@ footer > h3 {
   gap: 16px;
   margin-bottom: 10px;
 }
+
+h1 { 
+  text-decoration: none;
+}
+
+
+/**Media querues & Keyframes**/
+
+@media only screen and (min-width: 992px) { 
+  .logo-header  {
+    padding: 16px 64px;
+  
+}
+
+  .guide { 
+    padding: 16px 64px;
+    flex-direction: row;
+  }
+
+  .guide > h1 { 
+    margin-inline-start: -60px;
+  }
+.restaurant-guides, 
+.step {
+    padding: 16px 64px;
+    flex-direction: row;
+
+  }
+  .restaurant-card {
+    display: flex;
+    flex-direction: row;
+    width: 490px; 
+    height: 251px; 
+  }
+}
+  
+  
+  .restaurant-section {
+    padding: 16px 64px;
+    flex-direction: row;
+  }
+  .footer, 
+  .footer-link {
+    padding: 16px 12px;
+    flex-direction: row;
+  }
+
+
+@media only screen and (min-width: 1200px) { 
+.logo-header  {
+  padding: 4px 10px;
+}
+
+.guide, .restaurant-guides { 
+  flex-direction: row;
+ gap: 20px;
+}
+
+.step {
+  flex-direction: row;
+  width: 300px;
+  height: 50px;
+
+}
+
+.restaurant-card {
+  display: flex;
+  flex-direction: row;
+  width: 490px; 
+  height: 251px; 
+}
+
+.restaurant-section {
+  padding: 64px 128px;
+  flex-direction: row;
+} 
+
+.footer, .footer-link { 
+  padding: 64px 128px;
+  flex-direction:row;
+}
+}
+/*************************************1200px**********************************************/
+
+@media only screen and (min-width: 1200px) {
+ .guide,
+ .step,
+ .restaurant-guides, 
+ .restaurant-card, 
+ .footer, 
+ .footer-link
+  { 
+  flex-direction:row;
+   }
+  }
+
+  
+
+   /*************************************Keyframes**********************************************/
+
+  @keyframes full-heart { 
+    0% { 
+      opacity:0.5;
+    }
+    20% { 
+      opacity:0.6;
+    }
+    40% { 
+      opacity:0.7;
+    }
+    60% { 
+      opacity:0.8;
+    }
+    80% { 
+      opacity:0.9;
+    }
+    100% { 
+      opacity:1;
+    }
+  }
+  @keyframes content-appear {
+  0% { 
+    z-index: 0;
+  }
+  100% { 
+    z-index:10000 ;
+  }
+}
+
+@keyframes plate-appear { 
+  0% { 
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes spin { 
+  0% { 
+    transform:rotate(0deg); 
+    opacity: 1; 
+  }
+  75% { 
+    transform:rotate(360deg); 
+    opacity: 0; 
+  }
+  100% { 
+    transform:rotate(36deg); 
+    opacity: 0; 
+  }
+
+}
+
+@keyframes confirmation-rotate { 
+  0% { 
+    transform: rotate(180deg);
+  }
+  100% { 
+  transform: rotate(0deg);
+}
+}
+
