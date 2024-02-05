@@ -78,11 +78,19 @@ margin-bottom: 17px;
 
 @keyframes fadeIn {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 1;
+    opacity: 1;
   }
+}
+
+.card:hover .tick,
+.card:hover .icon,
+.price:hover + .tick,
+.price:hover + .icon {
+  animation: fadeIn 1s ease-in-out;
+  opacity: 1;
 }
 
 .card:hover .tick, .card:hover .icon {
@@ -158,8 +166,4 @@ margin-bottom: 17px;
   border-radius: 50%;
   opacity: 0;
   position: absolute;
-}
-.card, .card-content, 
-.price:hover {
-  margin-left: -10px; 
 }
