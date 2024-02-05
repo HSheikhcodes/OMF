@@ -15,7 +15,7 @@
 
 .image { 
   position: relative;
-  width: 375px;
+  width: 90%;
   height: 275px;
   margin-bottom: -33px;
   align-items: center;
@@ -24,7 +24,6 @@
 .menu-container { 
   background-color:#F6F6F6;
   border-radius: 45px;
-  Width: 375px;
   Height: 1307px;
   margin-top: -4rem;
   background-color: #f6f6f6;
@@ -68,6 +67,10 @@ p {
   Top: -70px;
   Left:325px;
 }
+
+/*ADD heart icon fade in colour - same as home page*/
+
+
 .under-line {
 border-bottom: 4px solid #99e2d0;
 Width: 14%;
