@@ -65,6 +65,9 @@ p {
   Height: 21px;
   Top: -70px;
   Left:325px;
+  cursor: pointer;
+  transition: 0.8s ease-in;
+  opacity: 1;
 }
 
 /*ADD heart icon fade in colour - same as home page*/
@@ -78,27 +81,6 @@ Border-radius:3px;
 margin-bottom: 17px;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.card:hover .tick,
-.card:hover .icon,
-.price:hover + .tick,
-.price:hover + .icon {
-  animation: fadeIn 1s ease-in-out;
-  opacity: 1;
-}
-
-.card:hover .tick, .card:hover .icon {
-  animation: fadeIn 1s ease-in-out;
-  opacity: 1;
-}
 
 .card {
   background-color: #FFFFFF;
@@ -143,12 +125,13 @@ margin-bottom: 17px;
   align-items: flex-end;
   margin-top: -40px;
   width: 95%;
+  transition: transform 0.3s ease-in-out;
 }
 
 .tick {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
   background-color: #99E2D0;
   height: 72px; 
   width: 59px; 
@@ -160,6 +143,13 @@ margin-bottom: 17px;
   right: 0px; 
   padding: 15px;
 }
+
+/** transitions*/
+
+.card:hover .price {
+  transform: translateX(-23%);
+}
+
 
 .icon {
   display: flex;
@@ -208,4 +198,53 @@ margin-bottom: 17px;
   position: absolute;
   background: linear-gradient(180deg, #ff88de 0%, #a16be0 100%);
   opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card:hover .tick,
+.card:hover .icon,
+.price:hover + .tick,
+.price:hover + .icon {
+  animation: fadeIn 1s ease-in-out;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 992px) {
+  .header  {
+    padding: 16px 64px;
+    flex-direction: row;
+  }
+  .menu-container { 
+    padding: 16px 64px;
+    flex-direction: row;
+  }
+  .starters { 
+    padding: 16px 64px;
+    flex-direction: row;
+  }
+  .main { 
+    padding: 16px 64px;
+    flex-direction: row;
+  }
+  .dessert {
+    padding: 16px 64px;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header,  .menu-container, 
+  .starters, .main, 
+  .dessert, .footer {
+    padding: 16px 64px;
+    flex-direction: row;
+  }
 }
