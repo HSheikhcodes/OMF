@@ -7,7 +7,7 @@
   
 * /*************************************Applied to ALL CLASSES**********************************************/
 
-/* Mobile First Styles */
+/* Mobile First Styles */       
 
 * body 
 { 
@@ -16,6 +16,15 @@
     margin: 0%;
     padding: 0;
 }
+
+* body 
+{ 
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    margin: 0%;
+    padding: 0;
+}
+
 
   
   a {
