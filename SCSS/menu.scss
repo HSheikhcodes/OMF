@@ -1,5 +1,5 @@
-/*Default should be Mobile */
-/* Adjust Media query desktops later ---- MUST BE DONE ACCURATELY! */
+@import 'variables'; 
+
 body {
 	font-family: $font-family_1;
 	text-decoration: none;
@@ -8,13 +8,6 @@ a {
 	text-decoration: none;
 	color: $color_1;
 }
-$color_1: #FFF;
-$font-family_1: 'Shrikhand', sans-serif;
-$font-family_2: "Roboto", sans-serif;
-$background-color_1: #F6F6F6;
-$background-color_2: #f6f6f6;
-$background-color_3: #FFFFFF;
-$background-color_4: #99E2D0;
 
 /*ADD heart icon fade in colour - same as home page*/
 @keyframes fadeIn {
@@ -39,13 +32,13 @@ $background-color_4: #99E2D0;
 }
 .image {
 	position: relative;
-	width: 90%;
 	height: 275px;
 	margin-bottom: -33px;
 	align-items: center;
+	width: 100%;
 }
 .menu-container {
-	background-color: $background-color_1;
+	background-color: $background-color_2;
 	border-radius: 45px;
 	height: 1307px;
 	margin-top: -4rem;
@@ -79,8 +72,8 @@ p {
 	position: relative;
 	width: 22px;
 	height: 21px;
-	top: -70px;
-	left: 325px;
+	top: -53px;
+	left: 296px;
 	cursor: pointer;
 	transition: 0.8s ease-in;
 	opacity: 1;
@@ -92,6 +85,33 @@ p {
 	border-radius: 3px;
 	margin-bottom: 17px;
 }
+
+.fill-heart {
+	position: relative;
+	left: 20px;
+	opacity: 0;
+	&:hover {
+		cursor: pointer;
+		transition: 0.8s ease-in;
+		opacity: 1;
+		background: -moz-linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+		color: $color_1;
+		background: -webkit-linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+		background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+.fa-heart {
+	&:hover {
+		cursor: pointer;
+		transition: 0.8s ease-in;
+		opacity: 1;
+		background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+		color: $color_8;
+	}
+}
+
 .card {
 	background-color: $background-color_3;
 	width: 333px;
@@ -107,6 +127,9 @@ p {
 	margin-bottom: 10px;
 	margin-top: 10px;
 	&:hover {
+		.card-content {
+			width: calc( 100% - 120px );
+		}
 		.price {
 			transform: translateX(-23%);
 		}
@@ -123,6 +146,9 @@ p {
 .card-content {
 	width: 100%;
 	transition: width 250ms ease-in-out;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 .dish {
 	display: flex;
@@ -131,9 +157,10 @@ p {
 	width: auto;
 }
 .dish-info {
+	font-size: 15px;
+	font-weight: 300;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	text-decoration: nowrap;
 	white-space: nowrap;
 }
 .price {
@@ -162,7 +189,7 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: $background-color_4;
+	background-color: $background-color_8;
 	height: 72px;
 	width: 59px;
 	border-top-right-radius: 15px;
@@ -171,13 +198,13 @@ p {
 	position: absolute;
 	top: 0px;
 	right: 0px;
-	padding: 15px;
+	padding: 6px;
 }
 .icon {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: $background-color_3;
+	background-color: $background-color_7;
 	height: 20px;
 	width: 20px;
 	border-radius: 50%;
@@ -185,6 +212,13 @@ p {
 	position: absolute;
 }
 .main {
+	>p {
+		margin-top: 40px;
+		gap: 12px;
+		display: flex;
+	}
+}
+.dessert {
 	>p {
 		margin-top: 40px;
 		gap: 12px;
@@ -216,51 +250,100 @@ p {
 		opacity: 0;
 	}
 }
+.dish-item {
+	font-size: 18px;
+	font-weight: 405;
+}
 @media only screen and (min-width: 992px) {
 	.header {
 		padding: 16px 64px;
 		flex-direction: row;
+		margin: -10px;
+		padding: 0%;
 	}
 	.menu-container {
 		padding: 16px 64px;
 		flex-direction: row;
+		margin: -10px;
 	}
-	.starters {
-		padding: 16px 64px;
-		flex-direction: row;
+	.dish-container {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		margin-left: 10%;
+		width: 80%;
 	}
 	.main {
-		padding: 16px 64px;
-		flex-direction: row;
+		>p {
+			margin-top: 0px;
+		}
 	}
 	.dessert {
-		padding: 16px 64px;
-		flex-direction: row;
+		>p {
+			margin-top: 0px;
+		}
+	}
+	.starters {
+		>p {
+			margin-top: 0px;
+		}
+	}
+	.Button {
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		left: 27em;
+		margin-top: 35px;
 	}
 }
 @media only screen and (min-width: 1200px) {
 	.header {
 		padding: 16px 64px;
 		flex-direction: row;
+		padding: 0%;
+	}
+	.dish-container {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		margin-left: 10%;
+		width: 80%;
 	}
 	.menu-container {
-		padding: 16px 64px;
-		flex-direction: row;
+		width: 75%;
+		align-items: center;
+		justify-content: center;
+		margin-left: 9%;
+		margin-right: 12.5%;
 	}
-	.starters {
-		padding: 16px 64px;
-		flex-direction: row;
+	.card {
+		width: 634px;
+	}
+	.restaurant-card-container {
+		padding-bottom: 40px;
 	}
 	.main {
-		padding: 16px 64px;
-		flex-direction: row;
+		>p {
+			margin-top: 0px;
+		}
 	}
 	.dessert {
-		padding: 16px 64px;
-		flex-direction: row;
+		>p {
+			margin-top: 0px;
+		}
 	}
-	.footer {
-		padding: 16px 64px;
-		flex-direction: row;
+	.starters {
+		>p {
+			margin-top: 0px;
+		}
+	}
+	.Button {
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		left: 27em;
+		margin-top: 35px;
+		padding: 0px 40px;
+		margin-left: 1px;
 	}
 }
