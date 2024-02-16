@@ -15,10 +15,10 @@
 
 .image { 
   position: relative;
-  width: 90%;
   height: 275px;
   margin-bottom: -33px;
   align-items: center;
+  width: 100%;
 }
 
 .menu-container { 
@@ -30,6 +30,7 @@
   z-index: 1;
   position: relative;
   padding-top: 5px;
+  
 }
 
 
@@ -63,8 +64,8 @@ p {
   position: relative;
   Width: 22px;
   Height: 21px;
-  Top: -70px;
-  Left:325px;
+  Top: -53px;
+  Left:296px;
   cursor: pointer;
   transition: 0.8s ease-in;
   opacity: 1;
@@ -81,7 +82,23 @@ Border-radius:3px;
 margin-bottom: 17px;
 }
 
+.fill-heart {
+  position: relative;
+  left: 20px;
+  opacity: 0;
+}
 
+.fill-heart:hover {
+  cursor: pointer;
+  transition: 0.8s ease-in;
+  opacity: 1;
+  background: -moz-linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  color: transparent;
+  background: -webkit-linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+ background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
 .card {
   background-color: #FFFFFF;
   width: 333px;
@@ -96,11 +113,16 @@ margin-bottom: 17px;
   position: relative;
   margin-bottom: 10px;
   margin-top: 10px;
+  
 }
 
 .card-content {
   width: 100%;
   transition: width 250ms ease-in-out;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  
 }
 
 .dish {
@@ -109,13 +131,18 @@ margin-bottom: 17px;
   transition: width 250ms ease-in-out;
   width: auto;
 }
-
-.dish-info {
+.dish-info { 
+  font-size: 15px;
+  font-weight: 300;
   overflow: hidden;
   text-overflow: ellipsis;
-  text-decoration: nowrap;
   white-space: nowrap;
-}
+  }
+
+.card:hover .card-content {
+    width: calc( 100% - 120px );
+  }
+  
 
 .price {
   display: flex;
@@ -126,6 +153,7 @@ margin-bottom: 17px;
   margin-top: -40px;
   width: 95%;
   transition: transform 0.3s ease-in-out;
+
 }
 
 .tick {
@@ -141,7 +169,7 @@ margin-bottom: 17px;
   position: absolute;
   top: 0px;
   right: 0px; 
-  padding: 15px;
+  padding: 6px;
 }
 
 /** transitions*/
@@ -163,7 +191,7 @@ margin-bottom: 17px;
   position: absolute;
 }
 
-.main > p { 
+.main > p, .dessert > p { 
   margin-top: 40px;
   gap: 12px;
   display: flex;
@@ -199,6 +227,10 @@ margin-bottom: 17px;
   background: linear-gradient(180deg, #ff88de 0%, #a16be0 100%);
   opacity: 0;
 }
+.dish-item { 
+  font-size: 18px;
+  font-weight: 405;
+}
 
 @keyframes fadeIn {
   0% {
@@ -218,33 +250,72 @@ margin-bottom: 17px;
 }
 
 @media only screen and (min-width: 992px) {
-  .header  {
+  .header,  .menu-container {
     padding: 16px 64px;
     flex-direction: row;
+    margin: -10px;
   }
-  .menu-container { 
-    padding: 16px 64px;
-    flex-direction: row;
+  .dish-container { 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10%;
+    width: 80%;
   }
-  .starters { 
-    padding: 16px 64px;
-    flex-direction: row;
+  .main > p, .dessert > p, .starters > p  { 
+    margin-top: 0px;
   }
-  .main { 
-    padding: 16px 64px;
-    flex-direction: row;
+  .header {
+    padding: 0%;
   }
-  .dessert {
-    padding: 16px 64px;
-    flex-direction: row;
+  .Button { 
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 27em;
+    margin-top: 35px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .header,  .menu-container, 
-  .starters, .main, 
-  .dessert, .footer {
+  .header {
     padding: 16px 64px;
     flex-direction: row;
+  }
+  .dish-container { 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10%;
+    width: 80%;
+  }
+
+.menu-container { 
+  width: 75%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 9%;
+  margin-right: 12.5%;
+}
+.card { 
+  width: 634px;
+}
+.restaurant-card-container { 
+  padding-bottom: 40px;
+}
+  .main > p, .dessert > p, .starters > p  { 
+    margin-top: 0px;
+  }
+  .header {
+    padding: 0%;
+  }
+  .Button { 
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 27em;
+    margin-top: 35px;
+    padding: 0px 40px;
+    margin-left: 1px;
   }
 }

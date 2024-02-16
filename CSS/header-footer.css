@@ -37,6 +37,7 @@ a {
   height: 186px;
   color: white;
   /* Additional scss variables for colour - ASAP! ----*/
+  justify-content: space-evenly;
 }
 
 footer>h3 {
@@ -60,7 +61,6 @@ footer>h3 {
 }
 .footer-link a {
   display: flex;
-  gap: 9px;
   color: white;
   /* Additional scss variables for colour - ASAP! ----*/
   gap: 16px;
@@ -69,19 +69,29 @@ footer>h3 {
 
 
 @media only screen and (min-width: 992px) { 
-  
-  .footer, .footer-link { 
-    padding: 64px 128px;
+  .footer,  .footer-link { 
     flex-direction:row;
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 110px;
+    gap: 28px;
+    height: 140px;
+    margin-bottom: 10px;
   }
   }
   
   @media only screen and (min-width: 1200px) {
-   .footer, 
-   .footer-link
-    { 
-    padding: 64px 128px;
+   .footer, .footer-link { 
     flex-direction:row;
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 110px;
+    gap: 28px;
+    height: 140px;
+    margin-bottom: 10px;
+     }
+     .footer-title { 
+     margin-top: 85px;
      }
     }
   
